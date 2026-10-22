@@ -15,6 +15,8 @@
   <img alt="Platform" src="https://img.shields.io/badge/platform-Android-3DDC84?logo=android&logoColor=white">
   <img alt="Transport" src="https://img.shields.io/badge/transport-HTTPS%20%2B%20pinned%20certs-0E7C86">
   <img alt="Tests" src="https://img.shields.io/badge/tests-12%20passing-2DD4BF">
+  <a href="https://github.com/Al-Mahamud/gshare/releases"><img alt="Release" src="https://img.shields.io/github/v/release/Al-Mahamud/gshare?include_prereleases&label=release&color=FFC24B"></a>
+  <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue"></a>
 </p>
 
 ---
@@ -102,15 +104,17 @@ but haven't been built yet.
 
 ### Install on Android
 
-Build the APK (see below), then install the file that matches your phone:
+Download an APK from the [**Releases**](https://github.com/Al-Mahamud/gshare/releases) page, or build one yourself
+(see below). Pick the file that matches your phone:
 
 | File | For |
 |---|---|
-| `app-arm64-v8a-release.apk` | Almost every Android phone from the last several years **(start here)** |
-| `app-armeabi-v7a-release.apk` | Older 32-bit phones |
-| `app-release.apk` | Universal build for any phone (larger) |
+| `gshare-<version>-arm64-v8a.apk` | Almost every Android phone from the last several years **(start here)** |
+| `gshare-<version>-armeabi-v7a.apk` | Older 32-bit phones |
+| `gshare-<version>-universal.apk` | Any phone, if you're unsure (larger download) |
 
 Android 7.0 (API 24) or newer is required. Allow *Install unknown apps* when Android asks.
+Each release lists SHA-256 checksums in `SHA256SUMS.txt` if you want to verify a download.
 
 ### Build from source
 
@@ -199,6 +203,10 @@ See [`docs/PLAN.md`](docs/PLAN.md) for the full plan.
 - Transfer history is kept in memory only.
 - Windows asks to allow gshare through the firewall on first launch. Allow it on private networks.
 - Release builds are currently signed with the debug key, which is fine for sideloading but not for the Play Store.
+
+## License
+
+Released under the [MIT License](LICENSE).
 
 ## Author
 
